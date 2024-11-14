@@ -66,10 +66,10 @@ reboot now
 cd /opt
 ```
 ```
-git clone https://github.com/simatec/piler-docker.git
+git clone https://github.com/mac-linux-free/piler-docker-mac.git
 ```
 ```
-cd /opt/piler-docker
+cd /opt/piler-docker-mac
 ```
 
 
