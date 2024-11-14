@@ -71,7 +71,7 @@ AUTO_IMPORT=false
 
 # Piler Version
 
-PILER_VERSION="1.4.5"
+PILER_VERSION="1.4.6"
 
 # MariaDB Version
 
