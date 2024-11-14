@@ -12,7 +12,7 @@ ENV DEBIAN_FRONTEND="noninteractive" \
     PILER_USER="piler" \
     MYSQL_DATABASE="piler"
 
-COPY ${PACKAGE}_${TARGETARCH}.deb /
+COPY ${PACKAGE} /
 
 # hadolint ignore=DL3008
 RUN apt-get update && \
