@@ -1,14 +1,14 @@
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 ARG PACKAGE
 ARG TARGETARCH
 
-LABEL description="piler ubuntu jammy image" \
+LABEL description="piler ubuntu nable image" \
       maintainer="Janos SUTO, sj@acts.hu" \
       package="${PACKAGE}"
 
 ENV DEBIAN_FRONTEND="noninteractive" \
-    DISTRO="jammy" \
+    DISTRO="nable" \
     PILER_USER="piler" \
     MYSQL_DATABASE="piler"
 
