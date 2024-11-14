@@ -17,9 +17,9 @@ COPY ${PACKAGE} /
 # hadolint ignore=DL3008
 RUN apt-get update && \
     apt-get -y --no-install-recommends install \
-       wget openssl sysstat php8.1-cli php8.1-cgi php8.1-mysql php8.1-fpm php8.1-zip php8.1-ldap \
-       php8.1-gd php8.1-curl php8.1-xml php8.1-memcached catdoc unrtf poppler-utils nginx tnef sudo libzip4 \
-       libtre5 cron libmariadb-dev mariadb-client-core-10.6 python3 python3-mysqldb ca-certificates curl rsyslog && \
+       wget openssl sysstat php8.3-cli php8.3-cgi php8.3-mysql php8.3-fpm php8.3-zip php8.3-ldap \
+       php8.3-gd php8.3-curl php8.3-xml php8.3-memcached catdoc unrtf poppler-utils nginx tnef sudo libzip4 \
+       libtre5 cron libmariadb-dev mariadb-client-core python3 python3-mysqldb ca-certificates curl rsyslog && \
     wget https://repo.manticoresearch.com/manticore-repo.noarch.deb && \
     dpkg -i manticore-repo.noarch.deb && \
     rm -f manticore-repo.noarch.deb && \
@@ -28,7 +28,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     sed -i '/session    required     pam_loginuid.so/c\#session    required     pam_loginuid.so' /etc/pam.d/cron && \
-    dpkg -i ${PACKAGE}_${TARGETARCH}.deb && \
+    dpkg -i ${PACKAGE} && \
     touch /etc/piler/MANTICORE && \
     ln -sf /etc/piler/piler-nginx.conf /etc/nginx/sites-enabled && \
     rm -f ${PACKAGE}_${TARGETARCH}.deb /etc/nginx/sites-enabled/default /etc/piler/piler.key /etc/piler/piler.pem /etc/piler/config-site.php && \
