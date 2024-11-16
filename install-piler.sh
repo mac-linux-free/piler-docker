@@ -111,8 +111,8 @@ fi
 # Path-Settings
 installPth=`pwd`
 configPth="$installPth/config"
-etcPth="/var/lib/docker/volumes/piler-docker-mac_piler_etc/_data"
-cronPth="/var/lib/docker/volumes/piler-docker-mac_piler_cron/_data"
+etcPth="/var/lib/docker/volumes/piler-docker_piler_etc/_data"
+cronPth="/var/lib/docker/volumes/piler-docker_piler_cron/_data"
 buildPth="$installPth/build"
 
 ############################## Installer Settings ######################################
