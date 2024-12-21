@@ -22,7 +22,7 @@ chmod a+x start.sh
 rm -f $buildPth/*.deb
 
 #curl -OL https://bitbucket.org/jsuto/piler/downloads/$PILER_PACKAGE
-wget https://github.com/jsuto/piler/releases/download/piler-1.4.6/$PILER_PACKAGE -O $PILER_PACKAGE
+wget https://github.com/jsuto/piler/releases/download/piler-1.4.7/$PILER_PACKAGE -O $PILER_PACKAGE
 
 set -o errexit
 set -o pipefail
